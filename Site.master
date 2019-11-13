@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>astronova</title>
+
+    <link rel="stylesheet" href="vendors/css/normalize.css">
+    <link rel="stylesheet" href="vendors/css/Grid.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+     <link rel="stylesheet" type="text/css" href="resources/css/ioniconsmin.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/ionicons@4.5.5/dist/css/ionicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <form runat="server">
+       <header>
+        <nav>
+            <div class="rows">
+
+              <a href="Default.aspx"> <img src="resources/css/img/logo-new.png" class="logo" alt="Astro Nova logo"  ></a>
+              <ul class="main-nav" >
+                <li class="navg"> <a href="#aboutus">About us</a> </li>
+                <li class="navg"> <a href="horotoday.aspx">Horoscope</a></li>
+                <li class="navg"> <a href="#contact">Contact</a> </li>
+                <li class="navg"> <a href="Register.aspx">Sign Up/</a> </li>
+                <li class="navg"> <a href="Login.aspx"> login</a> </li>
+              </ul>
+            </div>
+
+        </nav>
+    </header>
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            
+            
+        </div>
+        <footer >
+         <div id="contact">
+     <div class="row">
+       <div class="col span-1-of-2">
+         <ul class="end11">
+           <li ><a href="horotoday.aspx">About us</a></li>
+            <li ><a href="#blog">reviews</a></li>
+             <li ><a href="Contact.aspx">Contact us</a></li>
+               <li ><a href="#android">android app</a></li>
+         </ul>
+       </div>
+       <div class="col span-1-of-2">
+         <ul class="end12">
+           <li class="fun"><a href="www.facebook.com" target="_blank"><i class="ion-social-facebook"></i></a></li>
+           <li class="fun"><a href="www.twitter.com" target="_blank"><i class="ion-social-twitter"></i></a></li>
+           <li class="fun"><a href="www.instagram.com" target="_blank"><i class="ion-social-instagram"></i></a></li>
+           <li class="fun"><a href="www.google.com" target="_blank"><i class="ion-social-googleplus"></i></a></li>
+         </ul>
+       </div>
+
+     </div>
+     <div class="scopy">
+       <p>Copyright &copy; 2019 by Astronova. All rights reserved.</p>
+     </div>
+
+
+     </div>
+    </footer>
+    </form>
+</body>
+</html>
